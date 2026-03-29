@@ -12,7 +12,7 @@
     <script src="../../js/script_time.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <title>Комрат - мое место жительство</title>
+    <title>Komrat</title>
 </head>
 
 <body>
@@ -20,52 +20,51 @@
     <header>
         <img class="logo" src="../../images/logo_1.png">
         <navbar>
-            <a href="index.html">Главная</a>
-            <a href="despre.html">Комрат</a>
-            <a href="exploreaza.html">Экскурсия</a>
-            <a href="contacte.html" class="active">Контакт</a>
+            <a href="index.html">Bașlica</a>
+            <a href="despre.html">Komrat</a>
+            <a href="exploreaza.html">Gezi</a>
+            <a href="contacte.html" class="active">Kontakt</a>
         </navbar>
         <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
 
         <div class="icons">
             <div class="language-switcher">
                 <button class="lang-btn" onclick="toggleLangMenu()">
-                    <i class="fa-solid fa-language"></i>
+                    <i class="fa-solid fa-globe"></i>
                 </button>
+
 
                 <div class="lang-dropdown" id="langDropdown">
                     <a href="../ru/contacte.html">Русский</a>
                     <a href="contacte.html">Gagauz</a>
                 </div>
             </div>
-            <a href="signIn.html"><i class="fas fa-sign-in-alt myIcon" title="Вход"></i></a>
-            <a href="signUp.html"><i class="fas fa-user-plus myIcon" title="Создать аккаунт"
-                    style="color: rgb(247, 245, 245);"></i></a>
+            
         </div>
     </header>
 
     <main>
         <section>
-            <h1 class="centered"> Контакты </h1>
+            <h1 class="centered"> Kontakt  </h1>
 
             <div class="row">
                 <div class="col-50">
                     <div class="contacte">
-                        <h2 class="centered">Контактная информация</h2>
-                        <b>Примэрия: </b>телефон - 0 (298) 2-26-60<br /><b>e-mail:</b> primaria_comrat@mail.md<br /><b>
-                            сайт:</b> comrat.md <br /><br />
-                        <b>Главное управление культуры и туризма Гагаузии:</b> kultura-ge.md <br /> <br />
+                        <h3 class="centered">Kontakt </h3>
+                        <b>Primêriya: </b>telefon - 0 (298) 2-26-60<br /><b>e-mail:</b> primaria_comrat@mail.md<br /><b>
+                           Sayt:</b> comrat.md <br /><br />
+                        <b>Gagauz Eri Genel Kultura  hem Turizma Müdürlüü:</b> kultura-ge.md <br /> <br />
                         <b>DAMLA-TUR SRL:</b> comrat@damlatur.md <br /> <br />
-                        <b>Скорая помощь:</b> 112
+                        <b>Tez yardım:</b> 112
                     </div>
                 </div>
                 <div class="col-50">
                     <form class="cform" id="contact-form">
-                        <h2 class="centered">Ваш отзыв очень важен для нас...</h2>
-                        <input name="name" id="name" placeholder="Фамилия Имя" type="text">
-                        <input name="subject" id="subject" placeholder="Тема" type="text">
+                        <h3 class="centered">Sizin fikiriniz bizim için çok önemni...</h3>
+                        <input name="name" id="name" placeholder="Soyadı Adı" type="text">
+                        <input name="subject" id="subject" placeholder="Tema" type="text">
                         <textarea name="message" id="message" rows="5" placeholder="Mesajul"></textarea>
-                        <input type="button" onclick="send()" value="Отправить">
+                        <input type="button" onclick="send()" value="Yollandır">
                     </form>
                 </div>
             </div>
@@ -80,8 +79,8 @@
     </main>
 
     <footer>
-        <span>Данный веб-сайт был выполнен в рамках Региональной олимпиады: <br />
-            IT-технологии и не обязательно должен быть согласован с директором или представителем организации.</span>
+        <span>Мойсе Дмитрий, Лейчу Агастасия, Буиклы Дмитрий <br />
+            учащиеся ПУ Гимназия им. Степена Курогло.</span>
         <br /> <br /><br />
         <span id='result'></span>
     </footer>
