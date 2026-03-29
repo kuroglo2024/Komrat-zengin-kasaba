@@ -12,7 +12,7 @@
     <script src="../../js/script.js"></script>
     <script src="../../js/script_time.js"></script>
 
-    <title>Город Комрат</title>
+    <title>Komrat</title>
 </head>
 
 <body onload="getMyDates();">
@@ -25,12 +25,11 @@
             <a href="exploreaza.html">Gezi</a>
             <a href="contacte.html">Kontakt</a>
         </navbar>
-        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
-
+        
         <div class="icons">
             <div class="language-switcher">
                 <button class="lang-btn" onclick="toggleLangMenu()">
-                    <i class="fa-solid fa-language"></i>
+                    <i class="fa-solid fa-globe"></i> 
                 </button>
 
                 <div class="lang-dropdown" id="langDropdown">
@@ -38,70 +37,56 @@
                     <a href="despre.html">Gagauz</a>
                 </div>
             </div>
-           
+            <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
         </div>
-
     </header>
 
-    
-
     <main>
-    <section>
-        <h1 class="centered">Komrat – zengin kasaba.</h1>
+        <section>
+            <h1 class="centered">Komrat – zengin kasaba.</h1>
 
-        <div class="content-container">
-            
-            <!-- КАРТИНКА -->
-            <div class="column-left">
-                <img src="../../images/comrat.jpg" class="main-image">
+            <div class="content-container">
+                <div class="column-left">
+                    <img src="../../images/comrat.jpg" class="main-image">
+                </div>
+
+                <div class="column-right">
+                    <p>
+                        Komrat kasabası — Gagauz Avtonom Bölgesinin baş kasabası.
+                        Gagauz Erinin baş kasabası Komrat bir önemni politika, ekonomika, kultura merkezi. 
+                        Komrat buluner Moldovanın üülen tarafında, deredä Yalpug. Komratta Gagauziyanın Başkanatı,
+                        Başkan hem Halk Topluşu buluner. Kasaba kuruldu 1789 yılda.
+                        <br />
+                        <a href="https://www.gagauzia.md/ru/ato-gagauziya/naselennyie-punktyi/komratskij-rajon/g.-komrat.html"
+                        target="_blank" class="button"><b>Ileeri dooru okuyun...</b></a>
+                    </p>
+                </div>
             </div>
 
-            <!-- ТЕКСТ -->
-            <div class="column-right">
-                <p>
-                    Komrat kasabası — Gagauz Avtonom Bölgesinin baş kasabası.
-Gagauz Erinin baş kasabası Komrat bir önemni politika , ekonomika,kultura merkezi. 
-Komrat buluner Moldovanın üülen tarafında , deredä Yalpug. Komratta Gagauziyanın Başkanatı,
-Başkan hem Halk Topluşu buluner. Kasaba kuruldu 1789 yılda.
+            <div class="card-slider-wrapper">
+                <button class="nav-btn left" onclick="scrollSlider(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
 
-                    <br />
-                    <a href="https://www.gagauzia.md/ru/ato-gagauziya/naselennyie-punktyi/komratskij-rajon/g.-komrat.html"
-                    target="_blank" class="button"><b>Ileeri dooru okuyun...</b></a>
-                </p>
-            </div>
-        </div>
+                <div class="card-slider" id="cardSlider">
+                    <div class="card"><img src="../../images/comrat_6.jpg"></div>
+                    <div class="card"><img src="../../images/comrat.jpg"></div>
+                    <div class="card"><img src="../../images/images.jpg"></div>
+                    <div class="card"><img src="../../images/baner3.jpg"></div>
+                    <div class="card"><img src="../../images/park.jpg"></div>
+                    <div class="card"><img src="../../images/stone_komrat.jpg"></div>
+                    <div class="card"><img src="../../images/img3_1.jpg"></div>
+                    <div class="card"><img src="../../images/comrat_restoran1.jpeg"></div>
+                    <div class="card"><img src="../../images/comrat_2.jpg"></div>
+                </div>
 
-        <!-- ПРЕМИУМ СЛАЙДЕР -->
-        <div class="card-slider-wrapper">
-            <button class="nav-btn left" onclick="scrollSlider(-1)">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-
-            <div class="card-slider" id="cardSlider">
-                <div class="card"><img src="../../images/comrat_2.jpg"></div>
-                <div class="card"><img src="../../images/comrat_3.jpg"></div>
-                <div class="card"><img src="../../images/comrat.jpg"></div>
-                <div class="card"><img src="../../images/comrat_4.jpg"></div>
-                <div class="card"><img src="../../images/comrat_5.jpg"></div>
-                <div class="card"><img src="../../images/comrat_6.jpg"></div>
+                <button class="nav-btn right" onclick="scrollSlider(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
 
-            <button class="nav-btn right" onclick="scrollSlider(1)">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
-
-        <h2>Достопримечательности</h2>
-        <ul>
-            <li>Православный собор Святого Иоанна</li>
-            <li>Краеведческий музей</li>
-            <li>Художественная галерея</li>
-            <li>Библиотека Ататюрка</li>
-            <li>Аллея славы</li>
-        </ul>
-
-    </section>
-</main>
+        </section>
+    </main>
 
     <footer>
         <span>Мойсе Дмитрий, Лейчу Агастасия, Буиклы Дмитрий <br />
@@ -111,8 +96,5 @@ Başkan hem Halk Topluşu buluner. Kasaba kuruldu 1789 yılda.
     </footer>
 
     <script src="../../js/script_slider.js"></script>
-    <script src="../../js/script_time.js"></script>
-
 </body>
-
 </html>
