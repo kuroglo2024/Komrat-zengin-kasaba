@@ -352,7 +352,209 @@ footer {
     }
 
     section {
-        padding: 90px 10px;
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+TAS+Beginner&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/background42.jpg");
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    font-size: 17px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+header {
+    padding: 10px 15px;
+    position: fixed;
+    background: #1c0bb9;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Навигация для ПК */
+navbar {
+    display: flex;
+    margin-left: 30px;
+}
+
+navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+navbar a:hover, navbar .active {
+    border-bottom: 4px solid rgb(206, 252, 252);
+    color: rgb(206, 252, 252);
+}
+
+/* Группа иконок справа */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* Скрыт на ПК */
+}
+
+/* Переключатель языка */
+.language-switcher {
+    position: relative;
+}
+
+.lang-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    min-width: 120px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.lang-dropdown.show {
+    display: block;
+}
+
+.lang-dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lang-dropdown a:hover {
+    background: #f0f0f0;
+}
+
+/* Контент */
+section {
+    padding: 100px 15% 50px 15%; /* Большой отступ сверху для фикс. шапки */
+}
+
+h1.centered {
+    text-align: center;
+    font-size: 250%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 1px 0px #fff, 4px 2px 0px #ccc5f4;
+}
+
+.content-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.column-left, .column-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+p {
+    line-height: 1.6;
+    text-indent: 0; /* Убрал отступ для чистоты */
+    margin-top: 0;
+}
+
+/* Футер */
+footer {
+    background: #1c0bb9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+@media (max-width: 800px) {
+    #hamburger {
+        display: block; /* Показываем гамбургер */
+    }
+
+    /* Выпадающее меню под гамбургером */
+    navbar {
+        display: none; /* Скрыто по умолчанию */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #1c0bb9;
+        flex-direction: column;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Класс, который добавляет ваш JS (mobile или show) */
+    navbar.mobile {
+        display: flex;
+    }
+
+    navbar a {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    section {
+        padding: 110px 20px 40px 20px !important; /* Чтобы текст не прятался под меню */
+    }
+
+    h1.centered {
+        font-size: 1.8rem;
+    }
+}
     }
 
     #index h1 {
@@ -454,104 +656,7 @@ footer {
     }
 }
 
-/* Форма входа */
 
-.bg-img {
-    /* Используемое изображение */
-    background-image: url("../images/nature.jpg");
-
-    min-height: 75vh;
-
-    /* Центр и масштаб изображения */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/* Добавление стилей в контейнер форм */
-.container {
-    position: absolute;
-    left: 33%;
-    margin: 30px;
-    max-width: 300px;
-    padding: 16px;
-    background-color: white;
-}
-
-/* Поля ввода полной ширины */
-input[type=text],
-input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-}
-
-input[type=text]:focus,
-input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/*стиль для кнопки отправить */
-.btn {
-    background-color: #79eedfcb;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-.btn:hover {
-    opacity: 1;
-}
-
-
-/* Форма регистрации * /
-
-/* Добавление отступов в контейнеры */
-.container {
-    padding: 16px;
-    background-color: white;
-}
-
-/* Поля ввода полной ширины */
-input[type=text],
-input[type=password],
-textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-input[type=text]:focus,
-input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Установливаем стиль для кнопки отправить */
-.registerbtn {
-    background-color: #79eedfcb;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-.registerbtn:hover {
-    opacity: 1;
-}
 
 .language-switcher {
   position: relative;
