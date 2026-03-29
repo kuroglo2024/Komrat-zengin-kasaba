@@ -30,7 +30,7 @@
         <div class="icons">
             <div class="language-switcher">
                 <button class="lang-btn" onclick="toggleLangMenu()">
-                    <i class="fa-solid fa-language"></i>
+                     <i class="fa-solid fa-globe"></i> 
                 </button>
 
                 <div class="lang-dropdown" id="langDropdown">
@@ -43,28 +43,16 @@
     </header>
 
     <main>
+        <div class="header-spacer"></div>
         <section>
-            <h1 class="centered">О городе Комрат</h1>
+            
+            <h1 class="centered">Комрат - богатый город</h1>
 
             <div class="content-container">
                 
-                <div class="column-left">
-                    <article id="slider">
-                        <div id="slides">
-                            <div id="overflow">
-                                <div class="image">
-                                    <div class="slide"><img src="../../images/comrat_2.jpg"></div>
-                                    <div class="slide"><img src="../../images/comrat_3.jpg"></div>
-                                    <div class="slide"><img src="../../images/comrat.jpg"></div>
-                                    <div class="slide"><img src="../../images/comrat_4.jpg"></div>
-                                    <div class="slide"><img src="../../images/comrat_5.jpg"></div>
-                                    <div class="slide"><img src="../../images/comrat_6.jpg"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                 <div class="column-left">
+                    <img src="../../images/comrat.jpg" class="main-image">
                 </div>
-
                 <div class="column-right">
                     <p>
                         Город Комрат - Столица АТО Гагаузия - крупнейший по численности населения город, важнейший транспортный
@@ -80,52 +68,33 @@
                 </div>
             </div>
 
-            <h2> Достопримечательности</h2>
-            <ul>
-                <li>Православный собор Святого Иоанна, построенный в 1820 году. </li>
-                <li>Краеведческий музей, основу коллекции которого составляют археологические находки. Постоянная
-                    экспозиция музея посвящена гагаузской истории и культуре.</li>
-                <li>Гагаузская художественная галерея</li>
-                <li>Турецкая библиотека имени Мустафы Кемаля Ататюрка</li>
-                <li>Аллея славы гагаузского народа</li>
-            </ul>
+             <div class="card-slider-wrapper">
+                <button class="nav-btn left" onclick="scrollSlider(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
 
-            <iframe class="vframe" src="https://www.youtube.com/embed/fklPf1bmyfs" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+                <div class="card-slider" id="cardSlider">
+                    <div class="card"><img src="../../images/comrat_6.jpg"></div>
+                    <div class="card"><img src="../../images/comrat.jpg"></div>
+                    <div class="card"><img src="../../images/images.jpg"></div>
+                    <div class="card"><img src="../../images/baner3.jpg"></div>
+                    <div class="card"><img src="../../images/park.jpg"></div>
+                    <div class="card"><img src="../../images/stone_komrat.jpg"></div>
+                    <div class="card"><img src="../../images/img3_1.jpg"></div>
+                    <div class="card"><img src="../../images/comrat_restoran1.jpeg"></div>
+                    <div class="card"><img src="../../images/comrat_2.jpg"></div>
+                </div>
 
-            <p>
-                <b>Анастасов Сергей Ильич</b>- примар муниципия Комрат с 2015 года.<br />
-                <b>Златов Георгий Георгиевич</b>-Председатель Совета.<br />
-                <b>Сиренко Анна Константиновна</b>-Секретарь Совета.<br />
-                <b>Манол Наталья Иосифовна</b>-Землеустроитель.<br />
-                <br />
-                В городе зарегистрировано 2454 экономических агентов, из них 199 сельскохозяйственных предприятий,
-                79 предприятий промышленности и переработки, 3 мельницы, 2 мини пекарни, 662 торговых предприятий,
-                103 продовольственных магазинов, 226 промышленных магазинов, 13 заправок и др.
-                На территории муниципия Комрат находятся объекты социальной сферы: 7 детских дошкольных учреждений,
-                6 лицеев, 2 гимназии, дом культуры, историко-краеведческий музей, 11 библиотек, 1 стадион, 5 мини
-                футбольных полей,
-                1 дом престарелых, 1 реабилитационный центр для детей, центр для молодежи.<br />
-                <br />
-                Православный храм – Иоанна Предтечи, храмовый праздник отмечается - 20 января.
-                <br /><br />
-                Протяженность дорог составляет 148 км, из них с твердым покрытием – 68 км.
-                <br /><br />
-                Жилищный фонд населенного пункта составляет 1041,3 тыс. кв. м. В городе 9065 домов и квартир, из которых
-                8033 или 88,6% оборудованы централизованным водоснабжением, 8369 или 92,3% газифицированы и 5800 домов
-                или 64,0% подключены к канализационным сетям.
-                <br /><br />
-                На территории города расположены 18 артскважин, все в рабочем состоянии.
-            </p>
+                <button class="nav-btn right" onclick="scrollSlider(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
         </section>
     </main>
 
     <footer>
-        <span>Данный веб-сайт был выполнен в рамках Региональной олимпиады: <br />
-            IT-технологии и не обязательно должен быть согласован с директором или представителем организации.</span>
+        <span>Мойсе Дмитрий, Лейчу Агастасия, Буиклы Дмитрий <br />
+            учащиеся ПУ Гимназия им. Степена Курогло.</span>
         <br /><br />
         <span id='result'></span>
     </footer>
