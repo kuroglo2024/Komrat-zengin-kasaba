@@ -4,64 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Комрат</title>
     <link rel="icon" href="images/Interbelic_Comrat_CoA.png">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    
-    
-    
+
     <script src="js/script.js"></script>
     <script src="js/script_time.js"></script>
+
+    <title>Komrat</title>
 </head>
+
 <body onload="getMyDates();">
+
     <header>
-        <img class="logo" src="images/logo_1.png" alt="Logo">
+        <img class="logo" src="images/logo_1.png">
+
         <navbar>
-            <a href="index.html" class="active">Главная</a>
-            <a href="pages/ru/despre.html">Комрат</a>
-            <a href="pages/ru/exploreaza.html">Экскурсия</a>
-            <a href="pages/ru/contacte.html">Контакт</a>
+            <a href="pages/gz/index.html" class="active">Bașlıca</a>
+            <a href="pages/gz/despre.html">Komrat</a>
+            <a href="pages/gz/exploreaza.html">Gezi</a>
+            <a href="pages/gz/contacte.html">Kontakt</a>
         </navbar>
         <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+
         <div class="icons">
+
             <div class="language-switcher">
-                <button class="lang-btn" type="button" onclick="toggleLangMenu()">
-                     <i class="fa-solid fa-globe"></i> 
+                <button class="lang-btn" onclick="toggleLangMenu()">
+                    <i class="fa-solid fa-globe"></i> 
                 </button>
 
                 <div class="lang-dropdown" id="langDropdown">
-                    <a href="index.html">Русский</a>
-                    <a href="pages/gz/index.html">Gagauz</a>
+                    <a href="pages/ru/index.html">Русский</a>
+                    <a href="index.html">Gagauz</a>
                 </div>
             </div>
+           
         </div>
+
     </header>
+
     <main>
         <section id="index"> <br />
             <div class="index-info">
-                <h1>Комрат - богатый город</h1>
+                <h1>Komrat-zengin kasaba.</h1>
                 <br />
-                <a href="pages/ru/despre.html" class="custom-button">
-                    Узнать больше
+                <a href="pages/gz/despre.html" class="custom-button">
+                    Ileeri dooru okuyun
                 </a>
             </div>
         </section>
     </main>
 
-    <footer>
+   <footer>
         <div class="footer-content">
             <p class="footer-names">
-                <span>Мойсе Дмитрий</span>
-                <span>Лейчу Агастасия</span>
-                <span>Буиклы Дмитрий</span>
+                <span>Moyse Dmitriy</span>
+                <span>Leyçu Anastasiya</span>
+                <span>Buyuklı Dmitriy</span>
             </p>
-            <p class="footer-school">учащиеся ПУ Гимназия им. Степена Курогло.</p>
+            <p class="footer-school">Publik kurumu Komrat mun. Stepan Kuroglo adına Gimnaziyası</p>
             
             <div id="result"></div>
         </div>
-    </footer> 
-      
+    </footer>   
+
 </body>
+
 </html>
