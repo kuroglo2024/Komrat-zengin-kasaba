@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комрат</title>
+    <link rel="icon" href="../../images/Interbelic_Comrat_CoA.png">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    
+    
+    
+    <script src="../../js/script.js"></script>
+    <script src="../../js/script_time.js"></script>
+</head>
+<body onload="getMyDates();">
+    <header>
+        <img class="logo" src="../../images/logo_1.png" alt="Logo">
+        <navbar>
+            <a href="index.html" class="active">Главная</a>
+            <a href="despre.html">Комрат</a>
+            <a href="exploreaza.html">Экскурсия</a>
+            <a href="contacte.html">Контакт</a>
+        </navbar>
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+        <div class="icons">
+            <div class="language-switcher">
+                <button class="lang-btn" type="button" onclick="toggleLangMenu()">
+                     <i class="fa-solid fa-globe"></i> 
+                </button>
+
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="../ru/index.html">Русский</a>
+                    <a href="index.html">Gagauz</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="index"> <br />
+            <div class="index-info">
+                <h1>Комрат - богатый город</h1>
+                <br />
+                <a href="despre.html" class="custom-button">
+                    Узнать больше
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-names">
+                <span>Мойсе Дмитрий</span>
+                <span>Лейчу Агастасия</span>
+                <span>Буиклы Дмитрий</span>
+            </p>
+            <p class="footer-school">учащиеся ПУ Гимназия им. Степена Курогло.</p>
+            
+            <div id="result"></div>
+        </div>
+    </footer> 
+      
+</body>
+</html>
